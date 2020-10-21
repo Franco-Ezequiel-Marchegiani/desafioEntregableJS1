@@ -1,0 +1,98 @@
+@import './variables.scss';
+.seccion__discografia{
+    h2{
+        text-align:center;
+        font-size:$titulo-computadora;
+        padding:20px;
+    }
+    .buscador{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        .btn{
+            margin: 10px;
+            padding: 10px;
+        }
+        .fas{
+            color: $colorNegro;
+            font-size:20px;
+            &:hover{
+                color: $grisClaro;
+            }
+        }
+    }
+    .discos{
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    .card{
+        margin:30px;
+        margin-bottom:50px;
+        text-align: center;
+        img{
+            margin-bottom: 20px;
+            border: 1px solid;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            &:hover{
+            transform: scale(1.01, 1.01);
+            border: 1px solid rgb(0, 0, 0);
+            }
+        }
+        a{
+            margin:10px;
+        }
+    }
+}
+@media only screen and (max-width:320px){
+    .seccion__discografia{
+        h2{
+            text-align:center;
+            font-size:$titulo-celular-pequeño;
+            padding:20px;
+        }
+        .buscador{
+            .btn{
+                display: block;
+                margin:auto;
+            }
+        }
+
+    }
+}
+@media only screen and (min-width:321px) and (max-width: 575px){
+    .seccion__discografia{
+        h2{
+            text-align:center;
+            font-size:$titulo-celular-horizontal;
+            padding:20px;
+        }
+        .buscador{
+            .btn{
+                display: block;
+                margin:auto;
+            }
+        }
+
+    }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    .seccion__discografia{
+        h2{
+            text-align:center;
+            font-size:$titulo-tablet-chica;
+            padding:20px;
+        }
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1200px){
+    .seccion__discografia{
+        h2{
+            text-align:center;
+            font-size:$titulo-tablet-horizontal;
+            padding:20px;
+        }
+    }
+}

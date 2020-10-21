@@ -1,0 +1,23 @@
+@import './variables.scss';
+.navbar{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    nav{
+        align-self: center;
+        margin: 5px;
+        display: inline;
+    }
+    .nav-link{
+        padding: 5px;
+        margin: 10px;
+    }
+}

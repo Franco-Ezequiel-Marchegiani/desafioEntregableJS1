@@ -1,0 +1,991 @@
+.seccion__discografia h2 {
+  text-align: center;
+  font-size: 45px;
+  padding: 20px; }
+
+.seccion__discografia .buscador {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+  .seccion__discografia .buscador .btn {
+    margin: 10px;
+    padding: 10px; }
+  .seccion__discografia .buscador .fas {
+    color: #000004;
+    font-size: 20px; }
+    .seccion__discografia .buscador .fas:hover {
+      color: #C8C8C8; }
+
+.seccion__discografia .discos {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around; }
+
+.seccion__discografia .card {
+  margin: 30px;
+  margin-bottom: 50px;
+  text-align: center; }
+  .seccion__discografia .card img {
+    margin-bottom: 20px;
+    border: 1px solid;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+    .seccion__discografia .card img:hover {
+      transform: scale(1.01, 1.01);
+      border: 1px solid black; }
+  .seccion__discografia .card a {
+    margin: 10px; }
+
+@media only screen and (max-width: 320px) {
+  .seccion__discografia h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px; }
+  .seccion__discografia .buscador .btn {
+    display: block;
+    margin: auto; } }
+
+@media only screen and (min-width: 321px) and (max-width: 575px) {
+  .seccion__discografia h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px; }
+  .seccion__discografia .buscador .btn {
+    display: block;
+    margin: auto; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .seccion__discografia h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 20px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .seccion__discografia h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px; } }
+
+footer {
+  background: #FF4E50;
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+  background: linear-gradient(to right, #F9D423, #FF4E50);
+  display: grid;
+  grid-template-areas: "descripcion queen misRedes";
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 25% 25%; }
+  footer p {
+    font-size: 22px; }
+  footer .fab {
+    padding: 15px;
+    padding-top: 105px;
+    font-size: 70px; }
+  footer .fa-instagram {
+    color: #fcfcfc; }
+    footer .fa-instagram:hover {
+      transition: .4s;
+      color: #e4405f; }
+  footer .fa-facebook-square {
+    color: #fcfcfc; }
+    footer .fa-facebook-square:hover {
+      transition: .4s;
+      color: #3b5999; }
+  footer .fa-linkedin {
+    color: #fcfcfc; }
+    footer .fa-linkedin:hover {
+      transition: .4s;
+      color: #0077B5; }
+  footer .fa-github-square {
+    color: #fcfcfc; }
+    footer .fa-github-square:hover {
+      transition: .4s;
+      color: #333333; }
+
+.descripcion__footer {
+  grid-area: descripcion;
+  align-self: center;
+  text-align: center;
+  padding-bottom: 10px; }
+  .descripcion__footer .imagenLogo__footer {
+    width: 150px;
+    align-self: center;
+    padding-top: 20px; }
+
+.redes__queen {
+  grid-area: queen;
+  text-align: center; }
+
+.mis__redes {
+  grid-area: misRedes;
+  text-align: center; }
+
+@media only screen and (max-width: 320px) {
+  footer {
+    grid-template-areas: "descripcion" "queen" "misRedes";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr; }
+    footer p {
+      font-size: 14px; }
+    footer .fab {
+      font-size: 50px; }
+  .descripcion__footer {
+    grid-area: descripcion;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .descripcion__footer .imagenLogo__footer {
+      width: 80px;
+      align-self: center;
+      padding-top: 20px; }
+  .redes__queen {
+    grid-area: queen;
+    text-align: center; }
+  .mis__redes {
+    grid-area: misRedes;
+    text-align: center; } }
+
+@media only screen and (min-width: 321px) and (max-width: 599px) {
+  footer {
+    grid-template-areas: "descripcion" "queen" "misRedes";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr; }
+    footer p {
+      font-size: 18px; }
+    footer .fab {
+      font-size: 60px; }
+  .descripcion__footer {
+    grid-area: descripcion;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .descripcion__footer .imagenLogo__footer {
+      width: 120px;
+      align-self: center;
+      padding-top: 20px; }
+  .redes__queen {
+    grid-area: queen;
+    text-align: center; }
+  .mis__redes {
+    grid-area: misRedes;
+    text-align: center; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  footer {
+    grid-template-areas: "descripcion" "queen" "misRedes";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr; }
+    footer p {
+      font-size: 20px; }
+  .descripcion__footer {
+    grid-area: descripcion;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .descripcion__footer .imagenLogo__footer {
+      align-self: center;
+      padding-top: 20px; }
+  .redes__queen {
+    grid-area: queen;
+    text-align: center; }
+  .mis__redes {
+    grid-area: misRedes;
+    text-align: center; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  footer {
+    grid-template-areas: "descripcion queen misRedes";
+    grid-template-rows: 1fr;
+    grid-template-columns: 40% 30% 30%; }
+    footer p {
+      font-size: 22px; }
+    footer .fab {
+      padding: 15px;
+      padding-top: 170px;
+      padding-right: 10px;
+      font-size: 70px; }
+  .descripcion__footer {
+    grid-area: descripcion;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .descripcion__footer .imagenLogo__footer {
+      align-self: center;
+      padding-top: 20px; }
+  .redes__queen {
+    grid-area: queen;
+    text-align: center; }
+  .mis__redes {
+    grid-area: misRedes;
+    text-align: center; } }
+
+.navbar {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 20px; }
+  .navbar img {
+    width: 100px;
+    height: 100px; }
+  .navbar nav {
+    align-self: center;
+    margin: 5px;
+    display: inline; }
+  .navbar .nav-link {
+    padding: 5px;
+    margin: 10px; }
+
+.seccion__historia ul {
+  font-size: 26px; }
+
+.seccion__historia h4 {
+  text-align: center;
+  padding: 40px;
+  font-size: 35px; }
+
+.seccion__historia .titulo__historia {
+  text-align: center;
+  font-size: 45px;
+  padding-bottom: 50px; }
+
+.seccion__historia .historia__queen {
+  display: grid;
+  grid-template-areas: "imagen" "texto";
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%; }
+
+.seccion__historia .imagenHistoria__queen {
+  grid-area: imagen;
+  display: block;
+  margin: auto;
+  width: 65%;
+  padding-top: 30px; }
+
+.seccion__historia .textoHistoria__queen {
+  grid-area: texto;
+  text-align: center;
+  padding: 30px;
+  font-size: 22px; }
+
+.seccion__historia .historia__freddieMercury {
+  display: grid;
+  grid-template-areas: "imagen texto";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr; }
+
+.seccion__historia .imagenHistoria__freddie {
+  grid-area: imagen;
+  align-self: center;
+  width: 100%;
+  padding: 40px; }
+
+.seccion__historia .textoHistoria__freddie {
+  grid-area: texto;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  font-size: 22px; }
+
+.seccion__historia .historia__brianMay {
+  display: grid;
+  grid-template-areas: "texto imagen";
+  grid-template-rows: 1fr;
+  grid-template-columns: 60% 40%; }
+
+.seccion__historia .textoHistoria__brian {
+  grid-area: texto;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-left: 50px;
+  font-size: 22px; }
+
+.seccion__historia .imagenHistoria__brian {
+  grid-area: imagen;
+  align-self: center;
+  width: 70%;
+  padding: 40px;
+  display: block;
+  margin: auto; }
+
+.seccion__historia .historia__johnDeacon {
+  display: grid;
+  grid-template-areas: "imagen texto";
+  grid-template-rows: 1fr;
+  grid-template-columns: 40% 60%; }
+
+.seccion__historia .imagenHistoria__john {
+  grid-area: imagen;
+  align-self: center;
+  width: 75%;
+  padding: 10px;
+  display: block;
+  margin: auto; }
+
+.seccion__historia .textoHistoria__john {
+  grid-area: texto;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  font-size: 22px;
+  padding-right: 80px; }
+
+.seccion__historia .historia__rogerTaylor {
+  display: grid;
+  grid-template-areas: "texto imagen";
+  grid-template-rows: 1fr;
+  grid-template-columns: 60% 40%; }
+
+.seccion__historia .textoHistoria__roger {
+  grid-area: texto;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  padding-top: 100px;
+  font-size: 22px; }
+
+.seccion__historia .imagenHistoria__roger {
+  grid-area: imagen;
+  align-self: center;
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 80px; }
+
+.seccion__historia .historia__resumen {
+  display: grid;
+  grid-template-areas: "imagen" "texto";
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%; }
+
+.seccion__historia .imagenHistoria__cierre {
+  grid-area: imagen;
+  align-self: center;
+  display: block;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px; }
+
+.seccion__historia .textoHistoria__cierre {
+  grid-area: texto;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  font-size: 22px; }
+
+@media only screen and (max-width: 320px) {
+  .nav.justify-content-center li {
+    font-size: 18px;
+    font-weight: 700; }
+  .seccion__historia h4 {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px; }
+  .seccion__historia .titulo__historia {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px; }
+  .seccion__historia .imagenHistoria__queen {
+    grid-area: imagen;
+    width: 100%;
+    padding: 20px; }
+  .seccion__historia .textoHistoria__queen {
+    grid-area: texto;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px; }
+  .seccion__historia .historia__freddieMercury {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__freddieMercury .imagenHistoria__freddie {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px; }
+    .seccion__historia .historia__freddieMercury .textoHistoria__freddie {
+      grid-area: texto;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      font-size: 14px; }
+  .seccion__historia .historia__brianMay {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__brianMay .textoHistoria__brian {
+      grid-area: texto;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      font-size: 14px; }
+    .seccion__historia .historia__brianMay .imagenHistoria__brian {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px; }
+  .seccion__historia .historia__johnDeacon {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__johnDeacon .imagenHistoria__john {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px; }
+    .seccion__historia .historia__johnDeacon .textoHistoria__john {
+      grid-area: texto;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      font-size: 14px; }
+  .seccion__historia .historia__rogerTaylor {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__rogerTaylor .textoHistoria__roger {
+      grid-area: texto;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      font-size: 14px; }
+    .seccion__historia .historia__rogerTaylor .imagenHistoria__roger {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px; }
+  .seccion__historia .historia__resumen {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__resumen .imagenHistoria__cierre {
+      grid-area: imagen;
+      align-self: center;
+      display: block;
+      margin: auto;
+      width: 100%;
+      padding: 20px;
+      padding-top: 100px; }
+    .seccion__historia .historia__resumen .textoHistoria__cierre {
+      grid-area: texto;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      font-size: 14px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 599px) {
+  .nav.justify-content-center li {
+    font-size: 20px;
+    font-weight: 700; }
+  .seccion__historia h4 {
+    text-align: center;
+    padding: 40px;
+    font-size: 20px; }
+  .seccion__historia .titulo__historia {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px; }
+  .seccion__historia .imagenHistoria__queen {
+    grid-area: imagen;
+    width: 100%;
+    padding: 20px; }
+  .seccion__historia .textoHistoria__queen {
+    grid-area: texto;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px; }
+  .seccion__historia .historia__freddieMercury {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__freddieMercury .imagenHistoria__freddie {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px; }
+    .seccion__historia .historia__freddieMercury .textoHistoria__freddie {
+      grid-area: texto;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 18px; }
+  .seccion__historia .historia__brianMay {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__brianMay .textoHistoria__brian {
+      grid-area: texto;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 18px; }
+    .seccion__historia .historia__brianMay .imagenHistoria__brian {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px; }
+  .seccion__historia .historia__johnDeacon {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__johnDeacon .imagenHistoria__john {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px; }
+    .seccion__historia .historia__johnDeacon .textoHistoria__john {
+      grid-area: texto;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 18px; }
+  .seccion__historia .historia__rogerTaylor {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__rogerTaylor .textoHistoria__roger {
+      grid-area: texto;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 18px; }
+    .seccion__historia .historia__rogerTaylor .imagenHistoria__roger {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px; }
+  .seccion__historia .historia__resumen {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__resumen .imagenHistoria__cierre {
+      grid-area: imagen;
+      align-self: center;
+      display: block;
+      margin: auto;
+      width: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 100px; }
+    .seccion__historia .historia__resumen .textoHistoria__cierre {
+      grid-area: texto;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-size: 18px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .nav.justify-content-center li {
+    font-size: 22px;
+    font-weight: 700; }
+  .seccion__historia h4 {
+    text-align: center;
+    padding: 40px;
+    font-size: 35px; }
+  .seccion__historia .titulo__historia {
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 50px; }
+  .seccion__historia .imagenHistoria__queen {
+    grid-area: imagen;
+    width: 100%;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px; }
+  .seccion__historia .textoHistoria__queen {
+    grid-area: texto;
+    text-align: center;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 18px; }
+  .seccion__historia .historia__freddieMercury {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__freddieMercury .imagenHistoria__freddie {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px; }
+    .seccion__historia .historia__freddieMercury .textoHistoria__freddie {
+      grid-area: texto;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px;
+      font-size: 18px; }
+  .seccion__historia .historia__brianMay {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__brianMay .textoHistoria__brian {
+      grid-area: texto;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px;
+      font-size: 18px; }
+    .seccion__historia .historia__brianMay .imagenHistoria__brian {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px; }
+  .seccion__historia .historia__johnDeacon {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__johnDeacon .imagenHistoria__john {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px; }
+    .seccion__historia .historia__johnDeacon .textoHistoria__john {
+      grid-area: texto;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px;
+      font-size: 18px; }
+  .seccion__historia .historia__rogerTaylor {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__rogerTaylor .textoHistoria__roger {
+      grid-area: texto;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px;
+      font-size: 18px; }
+    .seccion__historia .historia__rogerTaylor .imagenHistoria__roger {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px; }
+  .seccion__historia .historia__resumen {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__resumen .imagenHistoria__cierre {
+      grid-area: imagen;
+      align-self: center;
+      display: block;
+      margin: auto;
+      width: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-top: 100px; }
+    .seccion__historia .historia__resumen .textoHistoria__cierre {
+      grid-area: texto;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 80px;
+      padding-right: 80px;
+      font-size: 18px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .nav.justify-content-center li {
+    font-size: 18px;
+    font-weight: 700; }
+  .seccion__historia h4 {
+    text-align: center;
+    padding: 40px;
+    font-size: 35px; }
+  .seccion__historia .titulo__historia {
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 50px; }
+  .seccion__historia .imagenHistoria__queen {
+    grid-area: imagen;
+    width: 100%;
+    padding: 20px;
+    padding-left: 160px;
+    padding-right: 160px; }
+  .seccion__historia .textoHistoria__queen {
+    grid-area: texto;
+    text-align: center;
+    padding: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 18px; }
+  .seccion__historia .historia__freddieMercury {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__freddieMercury .imagenHistoria__freddie {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px; }
+    .seccion__historia .historia__freddieMercury .textoHistoria__freddie {
+      grid-area: texto;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px;
+      font-size: 18px; }
+  .seccion__historia .historia__brianMay {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__brianMay .textoHistoria__brian {
+      grid-area: texto;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px;
+      font-size: 18px; }
+    .seccion__historia .historia__brianMay .imagenHistoria__brian {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px; }
+  .seccion__historia .historia__johnDeacon {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__johnDeacon .imagenHistoria__john {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px; }
+    .seccion__historia .historia__johnDeacon .textoHistoria__john {
+      grid-area: texto;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px;
+      font-size: 18px; }
+  .seccion__historia .historia__rogerTaylor {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__rogerTaylor .textoHistoria__roger {
+      grid-area: texto;
+      align-self: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px;
+      font-size: 18px; }
+    .seccion__historia .historia__rogerTaylor .imagenHistoria__roger {
+      grid-area: imagen;
+      align-self: center;
+      width: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px; }
+  .seccion__historia .historia__resumen {
+    display: grid;
+    grid-template-areas: "imagen" "texto";
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%; }
+    .seccion__historia .historia__resumen .imagenHistoria__cierre {
+      grid-area: imagen;
+      align-self: center;
+      display: block;
+      margin: auto;
+      width: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px;
+      padding-top: 100px; }
+    .seccion__historia .historia__resumen .textoHistoria__cierre {
+      grid-area: texto;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      padding-left: 160px;
+      padding-right: 160px;
+      font-size: 18px; } }
+
+html {
+  font-weight: 700px;
+  font-style: italic; }
+
+.home .imagen__slider {
+  width: 100%;
+  height: 750px; }
+
+.home .titulo__home {
+  font-size: 45px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 100px; }
+
+@media only screen and (max-width: 320px) {
+  .home .imagen__slider {
+    width: 100%;
+    height: 100%; }
+  .home .titulo__home {
+    font-size: 25px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 599px) {
+  .home .imagen__slider {
+    height: 100%; }
+  .home .titulo__home {
+    font-size: 30px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .home .imagen__slider {
+    height: 100%; }
+  .home .titulo__home {
+    font-size: 35px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .home .imagen__slider {
+    height: 100%; }
+  .home .titulo__home {
+    font-size: 40px; } }
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .home .imagen__slider {
+    height: 725px; } }
+
+.seccion__liveAid .titulo__liveAid {
+  text-align: center;
+  font-size: 45px; }
+
+.seccion__liveAid iframe {
+  padding-top: 20px;
+  width: 100%;
+  height: 800px; }
+
+@media only screen and (max-width: 320px) {
+  .seccion__liveAid .titulo__liveAid {
+    font-size: 25px; }
+  .seccion__liveAid iframe {
+    padding: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 300px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 599px) {
+  .seccion__liveAid .titulo__liveAid {
+    font-size: 25px; }
+  .seccion__liveAid iframe {
+    padding: 20px;
+    padding-top: 20px;
+    width: 100%;
+    height: 360px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .seccion__liveAid .titulo__liveAid {
+    font-size: 25px; }
+  .seccion__liveAid iframe {
+    padding-top: 20px;
+    width: 100%;
+    height: 450px; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .seccion__liveAid .titulo__liveAid {
+    font-size: 25px; }
+  .seccion__liveAid iframe {
+    padding-top: 20px;
+    width: 100%;
+    height: 500px; } }

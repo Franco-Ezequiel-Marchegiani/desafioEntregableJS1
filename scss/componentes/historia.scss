@@ -1,0 +1,823 @@
+@import './variables.scss';
+
+.seccion__historia{
+    ul{
+        font-size: $subTitulo-computadora;
+    }
+        h4{
+            text-align:center;
+            padding: 40px;
+            font-size: $titulo-tablet-chica;
+        }
+        .titulo__historia{
+            text-align:center;
+            font-size: $titulo-computadora;
+            padding-bottom:50px;
+        }
+            .historia__queen{
+            display: grid;
+            grid-template-areas:
+            "imagen"
+            "texto";
+            grid-template-rows: 1fr;
+            grid-template-columns: 100%;
+            }
+            .imagenHistoria__queen{
+                grid-area:imagen;
+                display: block;
+                margin:auto;
+                width: 65%;
+                padding-top: 30px;
+            }
+            .textoHistoria__queen{
+                grid-area: texto;
+                text-align:center;
+                padding: 30px;
+                font-size:$fuente-computadora;
+            }
+        
+        .historia__freddieMercury{
+            display: grid;
+            grid-template-areas:
+            "imagen texto";
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            }
+            .imagenHistoria__freddie{
+                grid-area: imagen;
+                align-self:center;
+                width:100%;
+                padding: 40px;
+            }
+            .textoHistoria__freddie{
+                grid-area: texto;
+                align-self:center;
+                width:100%;
+                height: 100%;
+                padding: 50px;
+                font-size:$fuente-computadora;
+            }
+        
+        .historia__brianMay{
+            display: grid;
+            grid-template-areas:
+            "texto imagen";
+            grid-template-rows: 1fr;
+            grid-template-columns: 60% 40%;
+            }
+            .textoHistoria__brian{
+                grid-area:texto;
+                align-self:center;
+                text-align:center;
+                width:100%;
+                height: 100%;
+                padding-top: 50px;
+                padding-left: 50px;
+                font-size:$fuente-computadora;
+            }
+            .imagenHistoria__brian{
+                grid-area: imagen;
+                align-self: center;
+                width: 70%;
+                padding: 40px;
+                display: block;
+                margin:auto;
+            }
+        
+        .historia__johnDeacon{
+            display: grid;
+            grid-template-areas:
+            "imagen texto";
+            grid-template-rows: 1fr;
+            grid-template-columns: 40% 60%;
+            }
+            .imagenHistoria__john{
+                grid-area: imagen;
+                align-self: center;
+                width: 75%;
+                padding: 10px;
+                display: block;
+                margin:auto;
+            }
+            .textoHistoria__john{
+                grid-area: texto;
+                align-self:center;
+                width:100%;
+                height: 100%;
+                padding: 50px;
+                font-size:$fuente-computadora;
+                padding-right:80px;
+            }
+        
+        .historia__rogerTaylor{
+            display: grid;
+            grid-template-areas:
+            "texto imagen";
+            grid-template-rows: 1fr;
+            grid-template-columns: 60% 40%;
+            }
+            .textoHistoria__roger{
+                grid-area: texto;
+                align-self: center;
+                text-align: center;
+                width:100%;
+                height: 100%;
+                padding: 50px;
+                padding-top: 100px;
+                font-size:$fuente-computadora;
+            }
+            .imagenHistoria__roger{
+                grid-area: imagen;
+                align-self: center;
+                display: block;
+                margin:auto;
+                width:100%;
+                padding: 80px;
+            }
+        
+        .historia__resumen{
+            display: grid;
+            grid-template-areas:
+            "imagen"
+            "texto";
+            grid-template-rows: 1fr;
+            grid-template-columns: 100%;
+            }
+            .imagenHistoria__cierre{
+                grid-area: imagen;
+                align-self:center;
+                display: block;
+                margin:auto;
+                width:100%;
+                padding: 20px;
+                padding-top: 100px;
+                padding-left: 150px;
+                padding-right: 150px;      
+            }
+            .textoHistoria__cierre{
+                grid-area: texto;
+                width:100%;
+                height: 100%;
+                padding: 50px;
+                font-size:$fuente-computadora;
+            }
+}
+//      *** Mobile 320px ***
+@media only screen and (max-width:320px){
+        .nav.justify-content-center{
+            li{
+                font-size: $subTitulo-celular-pequeño;
+                font-weight: 700;
+            }
+        }
+        .seccion__historia{
+            h4{
+            text-align:center;
+            padding: 40px;
+            font-size: $subTitulo-celular-pequeño;
+            }
+            .titulo__historia{
+            text-align:center;
+            font-size: $titulo-celular-pequeño;
+            padding-bottom:50px;
+            }
+                .imagenHistoria__queen{
+                    grid-area:imagen;
+                    width: 100%;
+                    padding: 20px;
+                }
+                .textoHistoria__queen{
+                    grid-area: texto;
+                    text-align:center;
+                    padding: 20px;
+                    font-size:$fuente-celular-pequeño;
+                }
+                .historia__freddieMercury{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;               
+                    .imagenHistoria__freddie{
+                            grid-area: imagen;
+                            align-self:center;
+                            width:100%;
+                            padding:20px;
+                    }
+                    .textoHistoria__freddie{
+                            grid-area: texto;
+                            align-self:center;
+                            width:100%;
+                            height:100%;
+                            font-size:$fuente-celular-pequeño;                           
+                    }
+                }
+                .historia__brianMay{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;               
+                    .textoHistoria__brian{
+                        grid-area:texto;
+                        align-self:center;
+                        text-align:center;
+                        width:100%;
+                        height:100%;
+                        padding:20px;
+                        font-size:$fuente-celular-pequeño;
+                    }
+                    .imagenHistoria__brian{
+                        grid-area: imagen;
+                        align-self: center;
+                        width: 100%;
+                        padding: 20px;
+                    }
+                }
+                .historia__johnDeacon{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;            
+                    .imagenHistoria__john{
+                        grid-area: imagen;
+                        align-self: center;
+                        width: 100%;
+                        padding:20px;
+                    }
+                    .textoHistoria__john{
+                        grid-area: texto;
+                        align-self:center;
+                        width:100%;
+                        height: 100%;
+                        padding:20px;
+                        font-size: $fuente-celular-pequeño;
+                    }
+                }
+                .historia__rogerTaylor{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;            
+                    .textoHistoria__roger{
+                        grid-area: texto;
+                        align-self: center;
+                        text-align: center;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        font-size:$fuente-celular-pequeño;
+                    }
+                    .imagenHistoria__roger{
+                        grid-area: imagen;
+                        align-self: center;
+                        width:100%;
+                        padding: 20px;
+                    }
+                }
+                .historia__resumen{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;
+                    
+                    .imagenHistoria__cierre{
+                        grid-area: imagen;
+                        align-self:center;
+                        display: block;
+                        margin:auto;
+                        width:100%;
+                        padding: 20px;
+                        padding-top: 100px;            
+                    }
+                    .textoHistoria__cierre{
+                        grid-area: texto;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        font-size:$fuente-celular-pequeño;
+                    }
+                }
+        }
+}
+//      *** Mobile Fin 320px ***
+//      *** Mobile 599px ***
+@media only screen and (min-width:321px) and (max-width: 599px){
+        .nav.justify-content-center{
+            li{
+                font-size: $subTitulo-celular-horizontal;
+                font-weight: 700;
+            }
+        }
+        .seccion__historia{
+            h4{
+            text-align:center;
+            padding: 40px;
+            font-size: $subTitulo-celular-horizontal;
+            }
+            .titulo__historia{
+                text-align:center;
+                font-size: $titulo-celular-horizontal;
+                padding-bottom:50px;
+            }
+                .imagenHistoria__queen{
+                    grid-area:imagen;
+                    width: 100%;
+                    padding: 20px;
+                }
+                .textoHistoria__queen{
+                    grid-area: texto;
+                    text-align:center;
+                    padding: 20px;
+                    font-size:$fuente-celular-horizontal;
+                }
+                .historia__freddieMercury{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;               
+                    .imagenHistoria__freddie{
+                            grid-area: imagen;
+                            align-self:center;
+                            width:100%;
+                            padding:20px;
+                            padding-left: 40px;
+                            padding-right: 40px;
+                    }
+                    .textoHistoria__freddie{
+                            grid-area: texto;
+                            align-self:center;
+                            width:100%;
+                            height:100%;
+                            padding:20px;
+                            padding-left: 40px;
+                            padding-right: 40px;
+                            font-size:$fuente-celular-horizontal;                           
+                    }
+                }
+                .historia__brianMay{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;               
+                    .textoHistoria__brian{
+                        grid-area:texto;
+                        align-self:center;
+                        text-align:center;
+                        width:100%;
+                        height:100%;
+                        padding:20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                    .imagenHistoria__brian{
+                        grid-area: imagen;
+                        align-self: center;
+                        width: 100%;
+                        padding: 20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                }
+                .historia__johnDeacon{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;            
+                    .imagenHistoria__john{
+                        grid-area: imagen;
+                        align-self: center;
+                        width: 100%;
+                        padding: 20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                    .textoHistoria__john{
+                        grid-area: texto;
+                        align-self:center;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        font-size: $fuente-celular-horizontal;
+                    }
+                }
+                .historia__rogerTaylor{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;            
+                    .textoHistoria__roger{
+                        grid-area: texto;
+                        align-self: center;
+                        text-align: center;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                    .imagenHistoria__roger{
+                        grid-area: imagen;
+                        align-self: center;
+                        width:100%;
+                        padding: 20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
+                }
+                .historia__resumen{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;
+                    
+                    .imagenHistoria__cierre{
+                        grid-area: imagen;
+                        align-self:center;
+                        display: block;
+                        margin:auto;
+                        width:100%;
+                        padding: 20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        padding-top: 100px;            
+                    }
+                    .textoHistoria__cierre{
+                        grid-area: texto;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                }
+        }
+}
+//      *** Mobile 599px Fin ***
+//      *** Mobile 768px ***
+@media only screen and (min-width:600px) and (max-width:768px){
+        .nav.justify-content-center{
+            li{
+                font-size: $subTitulo-tablet-chica;
+                font-weight: 700;
+            }
+        }
+        .seccion__historia{
+            h4{
+            text-align:center;
+            padding: 40px;
+            font-size: $titulo-tablet-chica;
+            }
+            .titulo__historia{
+                text-align:center;
+                font-size: $titulo-computadora;
+                padding-bottom:50px;
+            }
+                .imagenHistoria__queen{
+                    grid-area:imagen;
+                    width: 100%;
+                    padding: 20px;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                }
+                .textoHistoria__queen{
+                    grid-area: texto;
+                    text-align:center;
+                    padding: 20px;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    font-size:$fuente-celular-horizontal;
+                }
+                .historia__freddieMercury{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;               
+                    .imagenHistoria__freddie{
+                            grid-area: imagen;
+                            align-self:center;
+                            width:100%;
+                            padding:20px;
+                            padding-left: 80px;
+                            padding-right: 80px;
+                    }
+                    .textoHistoria__freddie{
+                            grid-area: texto;
+                            align-self:center;
+                            width:100%;
+                            height:100%;
+                            padding:20px;
+                            padding-left: 80px;
+                        padding-right: 80px;
+                            font-size:$fuente-celular-horizontal;                           
+                    }
+                }
+                .historia__brianMay{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;               
+                    .textoHistoria__brian{
+                        grid-area:texto;
+                        align-self:center;
+                        text-align:center;
+                        width:100%;
+                        height:100%;
+                        padding:20px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                    .imagenHistoria__brian{
+                        grid-area: imagen;
+                        align-self: center;
+                        width: 100%;
+                        padding: 20px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                    }
+                }
+                .historia__johnDeacon{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;            
+                    .imagenHistoria__john{
+                        grid-area: imagen;
+                        align-self: center;
+                        width: 100%;
+                        padding: 20px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                    }
+                    .textoHistoria__john{
+                        grid-area: texto;
+                        align-self:center;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        font-size: $fuente-celular-horizontal;
+                    }
+                }
+                .historia__rogerTaylor{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;            
+                    .textoHistoria__roger{
+                        grid-area: texto;
+                        align-self: center;
+                        text-align: center;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                    .imagenHistoria__roger{
+                        grid-area: imagen;
+                        align-self: center;
+                        width:100%;
+                        padding: 20px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                    }
+                }
+                .historia__resumen{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;
+                    
+                    .imagenHistoria__cierre{
+                        grid-area: imagen;
+                        align-self:center;
+                        display: block;
+                        margin:auto;
+                        width:100%;
+                        padding: 20px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        padding-top: 100px;            
+                    }
+                    .textoHistoria__cierre{
+                        grid-area: texto;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 80px;
+                        padding-right: 80px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                }
+        }
+}
+//      *** Mobile 768px Fin ***
+//      *** Mobile 1199px ***
+@media only screen and (min-width:769px) and (max-width:1199px){
+        .nav.justify-content-center{
+            li{
+                font-size: $subTitulo-celular-pequeño;
+                font-weight: 700;
+            }
+        }
+        .seccion__historia{
+                h4{
+                text-align:center;
+                padding: 40px;
+                font-size: $titulo-tablet-chica;
+                }
+                .titulo__historia{
+                    text-align:center;
+                    font-size: $titulo-computadora;
+                    padding-bottom:50px;
+                }
+                .imagenHistoria__queen{
+                    grid-area:imagen;
+                    width: 100%;
+                    padding: 20px;
+                    padding-left: 160px;
+                        padding-right: 160px;
+                }
+                .textoHistoria__queen{
+                    grid-area: texto;
+                    text-align:center;
+                    padding: 20px;
+                    padding-left: 160px;
+                        padding-right: 160px;
+                    font-size:$fuente-celular-horizontal;
+                }
+                .historia__freddieMercury{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;               
+                    .imagenHistoria__freddie{
+                            grid-area: imagen;
+                            align-self:center;
+                            width:100%;
+                            padding:20px;
+                            padding-left: 160px;
+                        padding-right: 160px;
+                    }
+                    .textoHistoria__freddie{
+                            grid-area: texto;
+                            align-self:center;
+                            width:100%;
+                            height:100%;
+                            padding:20px;
+                            padding-left: 160px;
+                            padding-right: 160px;
+                            font-size:$fuente-celular-horizontal;                           
+                    }
+                }
+                .historia__brianMay{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;               
+                    .textoHistoria__brian{
+                        grid-area:texto;
+                        align-self:center;
+                        text-align:center;
+                        width:100%;
+                        height:100%;
+                        padding:20px;
+                        padding-left: 160px;
+                        padding-right: 160px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                    .imagenHistoria__brian{
+                        grid-area: imagen;
+                        align-self: center;
+                        width: 100%;
+                        padding: 20px;
+                        padding-left: 160px;
+                        padding-right: 160px;
+                    }
+                }
+                .historia__johnDeacon{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;            
+                    .imagenHistoria__john{
+                        grid-area: imagen;
+                        align-self: center;
+                        width: 100%;
+                        padding: 20px;
+                        padding-left: 160px;
+                        padding-right: 160px;
+                    }
+                    .textoHistoria__john{
+                        grid-area: texto;
+                        align-self:center;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 160px;
+                        padding-right: 160px;
+                        font-size: $fuente-celular-horizontal;
+                    }
+                }
+                .historia__rogerTaylor{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;            
+                    .textoHistoria__roger{
+                        grid-area: texto;
+                        align-self: center;
+                        text-align: center;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 160px;
+                        padding-right: 160px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                    .imagenHistoria__roger{
+                        grid-area: imagen;
+                        align-self: center;
+                        width:100%;
+                        padding: 20px;
+                        padding-left: 160px;
+                        padding-right: 160px;
+                    }
+                }
+                .historia__resumen{
+                    display: grid;
+                    grid-template-areas:
+                    "imagen"
+                    "texto";
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 100%;
+                    
+                    .imagenHistoria__cierre{
+                        grid-area: imagen;
+                        align-self:center;
+                        display: block;
+                        margin:auto;
+                        width:100%;
+                        padding: 20px;
+                        padding-left: 160px;
+                        padding-right: 160px;
+                        padding-top: 100px;            
+                    }
+                    .textoHistoria__cierre{
+                        grid-area: texto;
+                        width:100%;
+                        height: 100%;
+                        padding: 20px;
+                        padding-left: 160px;
+                        padding-right: 160px;
+                        font-size:$fuente-celular-horizontal;
+                    }
+                }
+        }
+}
+//      *** Mobile 1199px Fin ***

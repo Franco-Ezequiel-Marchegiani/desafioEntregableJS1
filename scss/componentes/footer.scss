@@ -1,0 +1,210 @@
+@import './variables.scss';
+footer{
+        background: #FF4E50; 
+        background: -webkit-linear-gradient(to right, #F9D423, #FF4E50); 
+        background: linear-gradient(to right, #F9D423, #FF4E50); 
+        display: grid;
+        grid-template-areas:
+        "descripcion queen misRedes";
+        grid-template-rows: 1fr;
+        grid-template-columns: 50% 25% 25%;
+        p{
+            font-size: $fuente-computadora;
+        }
+        .fab{
+        padding: 15px;
+        padding-top: 105px;
+        font-size: 70px;
+        }
+        .fa-instagram{
+        color: $colorBlanco;
+            &:hover{
+                transition: .4s;
+                color: #e4405f;
+            }
+        }
+        .fa-facebook-square{
+            color: $colorBlanco;
+            &:hover{
+                transition: .4s;
+                color:#3b5999;
+            }
+        }
+        .fa-linkedin{
+            color: $colorBlanco;
+            &:hover{
+                transition: .4s;
+                color: #0077B5;
+            }    
+        }
+        .fa-github-square{
+            color: $colorBlanco;
+            &:hover{
+            transition: .4s;
+            color: #333333;
+            }
+        }
+}
+    .descripcion__footer{
+        grid-area: descripcion;
+        align-self: center;
+        text-align: center;
+        padding-bottom: 10px; 
+        .imagenLogo__footer{
+            width: 150px;
+            align-self: center;
+            padding-top:20px;
+        }
+    }
+    .redes__queen{
+        grid-area: queen;
+        text-align:center;
+    }
+    .mis__redes{
+        grid-area: misRedes;
+        text-align:center;
+    }
+@media only screen and (max-width:320px){
+    footer{
+        grid-template-areas:
+        "descripcion"
+        "queen"
+        "misRedes";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+            p{
+                font-size: $fuente-celular-pequeño;
+            }          
+            .fab{              
+                font-size: 50px;
+            }
+    }
+    .descripcion__footer{
+        grid-area: descripcion;
+        align-self: center;
+        text-align: center; 
+        padding-bottom: 0px;
+        padding-left:10px;
+        padding-right:10px;
+        .imagenLogo__footer{
+            width: 80px;
+            align-self: center;
+            padding-top:20px;
+        }
+    }
+    .redes__queen{
+        grid-area: queen;
+        text-align:center;
+    }
+    .mis__redes{
+        grid-area: misRedes;
+        text-align:center;
+    }
+}
+@media only screen and (min-width:321px) and (max-width: 599px){
+    footer{
+        grid-template-areas:
+        "descripcion"
+        "queen"
+        "misRedes";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+            p{
+                font-size: $fuente-celular-horizontal;
+            }          
+            .fab{              
+                font-size: 60px;
+            }
+    }
+    .descripcion__footer{
+        grid-area: descripcion;
+        align-self: center;
+        text-align: center; 
+        padding-bottom: 0px;
+        padding-left:10px;
+        padding-right:10px;
+        .imagenLogo__footer{
+            width: 120px;
+            align-self: center;
+            padding-top:20px;
+        }
+    }
+    .redes__queen{
+        grid-area: queen;
+        text-align:center;
+    }
+    .mis__redes{
+        grid-area: misRedes;
+        text-align:center;
+    }
+}
+@media only screen and (min-width:600px) and (max-width: 768px){
+    footer{
+        grid-template-areas:
+        "descripcion"
+        "queen"
+        "misRedes";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+            p{
+                font-size: $fuente-tablet-chica;
+            }                      
+    }
+        .descripcion__footer{
+            grid-area: descripcion;
+            align-self: center;
+            text-align: center; 
+            padding-bottom: 0px;
+            padding-left:10px;
+            padding-right:10px;
+            .imagenLogo__footer{
+                align-self: center;
+                padding-top:20px;
+            }
+        }
+        .redes__queen{
+        grid-area: queen;
+        text-align:center;
+        }
+        .mis__redes{
+            grid-area: misRedes;
+            text-align:center;
+        }
+}
+@media only screen and (min-width:769px) and (max-width:1200px){
+    footer{
+        grid-template-areas:
+        "descripcion queen misRedes";
+        grid-template-rows: 1fr;
+        grid-template-columns: 40% 30% 30%;
+            p{
+                font-size: $fuente-tablet-horizontal;
+            }      
+            .fab{
+                padding: 15px;
+                padding-top: 170px;
+                padding-right: 10px;
+                font-size: 70px;
+            }                
+    }
+        .descripcion__footer{
+            grid-area: descripcion;
+            align-self: center;
+            text-align: center; 
+            padding-bottom: 10px;
+            padding-left:10px;
+            padding-right:10px;
+            .imagenLogo__footer{
+                align-self: center;
+                padding-top:20px;
+            }
+        }
+        .redes__queen{
+        grid-area: queen;
+        text-align:center;
+        }
+        .mis__redes{
+            grid-area: misRedes;
+            text-align:center;
+        }
+}
