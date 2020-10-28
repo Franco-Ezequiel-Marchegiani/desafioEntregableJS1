@@ -1,0 +1,176 @@
+/*** Dark Mode Para Todas Las Ventanas ***/
+body {
+  background: #fcfcfc;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
+body.dark {
+  background: #000004;
+}
+
+body.dark h1 {
+  color: #fcfcfc;
+}
+
+body.dark h2 {
+  color: #fcfcfc;
+}
+
+body.dark h3 {
+  color: #fcfcfc;
+}
+
+body.dark h4 {
+  color: #fcfcfc;
+}
+
+body.dark p {
+  color: #fcfcfc;
+}
+
+body.dark .discos .card .card-title {
+  color: #fcfcfc;
+}
+
+body.dark .discos .card .card-text {
+  color: #fcfcfc;
+}
+
+body.dark .discos .card .card-body {
+  background: #222222;
+  -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+}
+
+body.dark .fab {
+  color: #000004;
+}
+
+/*** Fin Dark Mode ***/
+.seccion__discografia h2 {
+  text-align: center;
+  font-size: 45px;
+  padding: 20px;
+}
+
+.seccion__discografia .buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.seccion__discografia .buscador .btn {
+  margin: 10px;
+  padding: 10px;
+}
+
+.seccion__discografia .buscador .fas {
+  color: #000004;
+  font-size: 20px;
+}
+
+.seccion__discografia .buscador .fas:hover {
+  color: #C8C8C8;
+}
+
+.seccion__discografia .discos {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.seccion__discografia .card {
+  background: #fcfcfc;
+  -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+  -webkit-transition: .4s ease all;
+  transition: .4s ease all;
+  margin: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+body.dark .seccion__discografia .card {
+  background: #222222;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+.seccion__discografia .card .card-title {
+  color: #000004;
+}
+
+.seccion__discografia .card .card-text {
+  color: #000004;
+}
+
+.seccion__discografia .card img {
+  margin-bottom: 20px;
+  border: 1px solid;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.seccion__discografia .card img:hover {
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
+  border: 1px solid black;
+}
+
+.seccion__discografia .card a {
+  margin: 10px;
+}
+
+@media only screen and (max-width: 320px) {
+  .seccion__discografia h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+  }
+  .seccion__discografia .buscador .btn {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 575px) {
+  .seccion__discografia h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+  }
+  .seccion__discografia .buscador .btn {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .seccion__discografia h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .seccion__discografia h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+  }
+}
+/*# sourceMappingURL=discografia.css.map */

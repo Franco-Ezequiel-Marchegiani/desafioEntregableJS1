@@ -10,6 +10,9 @@ footer{
         grid-template-columns: 50% 25% 25%;
         p{
             font-size: $fuente-computadora;
+            body.dark &{
+                color: $colorNegro;
+            }
         }
         .fab{
         padding: 15px;
@@ -73,7 +76,7 @@ footer{
         grid-template-rows: 1fr;
         grid-template-columns: 1fr;
             p{
-                font-size: $fuente-celular-pequeño;
+                font-size: $fuente-celular-chico;
             }          
             .fab{              
                 font-size: 50px;

@@ -1,3 +1,30 @@
+/*** Dark Mode Para Todas Las Ventanas ***/
+body {
+  background: #fcfcfc;
+  transition: .5s ease all; }
+  body.dark {
+    background: #000004; }
+    body.dark h1 {
+      color: #fcfcfc; }
+    body.dark h2 {
+      color: #fcfcfc; }
+    body.dark h3 {
+      color: #fcfcfc; }
+    body.dark h4 {
+      color: #fcfcfc; }
+    body.dark p {
+      color: #fcfcfc; }
+    body.dark .discos .card .card-title {
+      color: #fcfcfc; }
+    body.dark .discos .card .card-text {
+      color: #fcfcfc; }
+    body.dark .discos .card .card-body {
+      background: #222222;
+      box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16); }
+    body.dark .fab {
+      color: #000004; }
+
+/*** Fin Dark Mode ***/
 .seccion__discografia h2 {
   text-align: center;
   font-size: 45px;
@@ -24,9 +51,19 @@
   justify-content: space-around; }
 
 .seccion__discografia .card {
+  background: #fcfcfc;
+  box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+  transition: .4s ease all;
   margin: 30px;
   margin-bottom: 50px;
   text-align: center; }
+  body.dark .seccion__discografia .card {
+    background: #222222;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16); }
+  .seccion__discografia .card .card-title {
+    color: #000004; }
+  .seccion__discografia .card .card-text {
+    color: #000004; }
   .seccion__discografia .card img {
     margin-bottom: 20px;
     border: 1px solid;
@@ -77,6 +114,8 @@ footer {
   grid-template-columns: 50% 25% 25%; }
   footer p {
     font-size: 22px; }
+    body.dark footer p {
+      color: #000004; }
   footer .fab {
     padding: 15px;
     padding-top: 105px;
@@ -228,6 +267,8 @@ footer {
     text-align: center; } }
 
 .navbar {
+  background: #fcfcfc;
+  transition: .4s ease all;
   font-size: 18px;
   font-weight: 700;
   display: flex;
@@ -235,6 +276,15 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   padding: 15px 20px; }
+  body.dark .navbar {
+    background: #222222;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16); }
+    body.dark .navbar .fa-bars {
+      color: #fcfcfc; }
+    body.dark .navbar a {
+      color: #fcfcfc; }
+      body.dark .navbar a:hover {
+        color: #ACABAB; }
   .navbar img {
     width: 100px;
     height: 100px; }
@@ -245,6 +295,12 @@ footer {
   .navbar .nav-link {
     padding: 5px;
     margin: 10px; }
+
+body {
+  background: #fcfcfc; }
+  .dark body {
+    background: #000004;
+    color: #fcfcfc; }
 
 .seccion__historia ul {
   font-size: 26px; }
@@ -927,25 +983,29 @@ html {
 
 @media only screen and (min-width: 321px) and (max-width: 599px) {
   .home .imagen__slider {
+    width: 100%;
     height: 100%; }
   .home .titulo__home {
     font-size: 30px; } }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
   .home .imagen__slider {
+    width: 100%;
     height: 100%; }
   .home .titulo__home {
     font-size: 35px; } }
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   .home .imagen__slider {
-    height: 100%; }
+    width: 100%;
+    height: 70%; }
   .home .titulo__home {
     font-size: 40px; } }
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
   .home .imagen__slider {
-    height: 725px; } }
+    width: 100%;
+    height: 80%; } }
 
 .seccion__liveAid .titulo__liveAid {
   text-align: center;
@@ -989,3 +1049,43 @@ html {
     padding-top: 20px;
     width: 100%;
     height: 500px; } }
+
+iframe {
+  width: 100%;
+  height: 750px; }
+
+.switch {
+  text-align: center;
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none; }
+  .switch::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2); }
+  .switch.active {
+    background: orange;
+    color: #000; }
+    .switch.active::after {
+      right: 0;
+      left: unset; }
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff; }

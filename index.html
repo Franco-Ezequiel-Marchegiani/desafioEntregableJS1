@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biografía Queen</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="Imagenes/logo_icon.png">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">
-            <img src="./Imagenes/logo.png" alt="Icono Queen">
+            <img src="./Imagenes/logo.png" alt="Icono Queen" id="logoQueen">
         </a>
         <form class="form-inline">  
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,10 +36,14 @@
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
+                <button onclick="funcionDarkMode();" class="switch" id="switch">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i></span>
+                </button>
             </div>   
         </form>   
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span><i class="fas fa-bars"></i> </span>
               </button>        
       </nav>
       <!-- Header Fin -->
@@ -99,7 +103,7 @@
           <h2>Discografía</h2>
           <div class="buscador">
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Seleccione Álbum" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Escriba un Álbum" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                 <button class="btn btn-primary"> <i class="fas fa-shopping-cart"></i></button>
               </form>
@@ -236,7 +240,7 @@
     <!-- Discografía Fin -->
     <!-- Película -->
     <section id="pelicula"> 
-        <!-- <iframe id="myVideo" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mP0VHJYFOAU?autoplay=1&loop=1&controls=0&rel=0&showinfo=0&controls=0&disablekb=1&modestbranding=0" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
+     <iframe id="myVideo" width="100%" height="800" src="https://www.youtube.com/embed/N18id3CQ07A?autoplay=1&muted=1&loop=1&playlist=https://www.youtube-nocookie.com/embed/mP0VHJYFOAU" frameborder="0" allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <!-- Película Fin -->
     <!-- Historia -->
@@ -259,34 +263,34 @@
                 <a class="nav-link" href="#rogerTaylor">Roger Taylor</a>
             </li>
             </ul>
-            <div class="historia__queen" id="queen">
-                <img src="https://static2.abc.es/media/cultura/2020/01/26/queen-kXVB--620x349@abc.jpg" class="imagenHistoria__queen" alt="Imagen Historia Queen">
+            <div class="historia__queen" >
+                <img src="https://static2.abc.es/media/cultura/2020/01/26/queen-kXVB--620x349@abc.jpg" class="imagenHistoria__queen" alt="Imagen Historia Queen" id="queen">
                 <p class="textoHistoria__queen">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam vel neque, quia magni omnis harum repellendus ullam saepe animi ab, id ut eum necessitatibus possimus! Est distinctio maxime velit nisi!
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam vel neque, quia magni omnis harum repellendus ullam saepe animi ab, id ut eum necessitatibus possimus! Est distinctio maxime velit nisi!
                 </p>
             </div>
             <h4 class="tituloHistoria__freddie">Freddie Mercury</h4>
-            <div class="historia__freddieMercury" id="freddieMercury">
-                <img src="https://wallpaperaccess.com/full/1268434.jpg" class="imagenHistoria__freddie" alt="Imagen Historia Freddie Mercury">
+            <div class="historia__freddieMercury" >
+                <img src="https://wallpaperaccess.com/full/1268434.jpg" class="imagenHistoria__freddie" alt="Imagen Historia Freddie Mercury" id="freddieMercury">
                 <p class="textoHistoria__freddie">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aperiam inventore consectetur unde, a eius vel amet sunt aliquam id enim sint ab voluptates iure saepe qui labore facilis tempora incidunt repudiandae adipisci. Doloribus nostrum ut quia architecto at minus tempore commodi consequatur. Inventore eos facere cumque in dicta alias sapiente reiciendis nihil quia provident magnam unde deserunt quasi perferendis, quo esse quas? Tempora pariatur est nisi non, inventore omnis, laborum alias sequi, recusandae animi adipisci molestiae. Nam ratione fugiat eligendi dolorum possimus tenetur, id animi perferendis, sapiente inventore libero accusantium, ipsa voluptatem adipisci esse laudantium nulla impedit aliquam ea.</p>
             </div>
             <h4>Brian May</h4>
-            <div class="historia__brianMay" id="brianMay">
-                <img src="https://64.media.tumblr.com/0aad6a93f004fce217c294b449a06710/tumblr_puw24bsGoE1qdslbvo1_1280.jpg" class="imagenHistoria__brian" alt="Imagen Historia Brian May">
+            <div class="historia__brianMay" >
+                <img src="https://64.media.tumblr.com/0aad6a93f004fce217c294b449a06710/tumblr_puw24bsGoE1qdslbvo1_1280.jpg" class="imagenHistoria__brian" alt="Imagen Historia Brian May" id="brianMay">
                 <p class="textoHistoria__brian">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aperiam inventore consectetur unde, a eius vel amet sunt aliquam id enim sint ab voluptates iure saepe qui labore facilis tempora incidunt repudiandae adipisci. Doloribus nostrum ut quia architecto at minus tempore commodi consequatur. Inventore eos facere cumque in dicta alias sapiente reiciendis nihil quia provident magnam unde deserunt quasi perferendis, quo esse quas? Tempora pariatur est nisi non, inventore omnis, laborum alias sequi, recusandae animi adipisci molestiae. Nam ratione fugiat eligendi dolorum possimus tenetur, id animi perferendis, sapiente inventore libero accusantium, ipsa voluptatem adipisci esse laudantium nulla impedit aliquam ea.</p>
             </div>
             <h4>John Deacon</h4>
-            <div class="historia__johnDeacon" id="johnDeacon">
-                <img src="https://images5.fanpop.com/image/photos/31200000/-John-Deacon-john-deacon-31217224-700-1073.jpg" class="imagenHistoria__john" alt="Imagen Historia John Deacon">
+            <div class="historia__johnDeacon" >
+                <img src="https://images5.fanpop.com/image/photos/31200000/-John-Deacon-john-deacon-31217224-700-1073.jpg" class="imagenHistoria__john" alt="Imagen Historia John Deacon" id="johnDeacon">
                 <p class="textoHistoria__john">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aperiam inventore consectetur unde, a eius vel amet sunt aliquam id enim sint ab voluptates iure saepe qui labore facilis tempora incidunt repudiandae adipisci. Doloribus nostrum ut quia architecto at minus tempore commodi consequatur. Inventore eos facere cumque in dicta alias sapiente reiciendis nihil quia provident magnam unde deserunt quasi perferendis, quo esse quas? Tempora pariatur est nisi non, inventore omnis, laborum alias sequi, recusandae animi adipisci molestiae. Nam ratione fugiat eligendi dolorum possimus tenetur, id animi perferendis, sapiente inventore libero accusantium, ipsa voluptatem adipisci esse laudantium nulla impedit aliquam ea.</p>
             </div>
             <h4>Roger Taylor</h4>
-            <div class="historia__rogerTaylor" id="rogerTaylor">
-                <img src="https://i.pinimg.com/originals/76/4f/60/764f60048992249df4209f1c02e7c58f.jpg" class="imagenHistoria__roger" alt="Imagen Historia Roger Taylor">
+            <div class="historia__rogerTaylor" >
+                <img src="https://i.pinimg.com/originals/76/4f/60/764f60048992249df4209f1c02e7c58f.jpg" class="imagenHistoria__roger" alt="Imagen Historia Roger Taylor" id="rogerTaylor">
                 <p class="textoHistoria__roger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aperiam inventore consectetur unde, a eius vel amet sunt aliquam id enim sint ab voluptates iure saepe qui labore facilis tempora incidunt repudiandae adipisci. Doloribus nostrum ut quia architecto at minus tempore commodi consequatur. Inventore eos facere cumque in dicta alias sapiente reiciendis nihil quia provident magnam unde deserunt quasi perferendis, quo esse quas? Tempora pariatur est nisi non, inventore omnis, laborum alias sequi, recusandae animi adipisci molestiae. Nam ratione fugiat eligendi dolorum possimus tenetur, id animi perferendis, sapiente inventore libero accusantium, ipsa voluptatem adipisci esse laudantium nulla impedit aliquam ea.</p>
             </div>
             <div class="historia__resumen">
-                <img src="https://www.infobae.com/new-resizer/UIosEQLh0FILb_0nStFV_njE7i0=/1200x900/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/NUO63B763VBTFL5BCWTBNMZPTU.jpg" class="imagenHistoria__cierre" alt="Queen Argentina">
+                <img src="https://www.infobae.com/new-resizer/UIosEQLh0FILb_0nStFV_njE7i0=/1200x900/filters:format(jpg):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/NUO63B763VBTFL5BCWTBNMZPTU.jpg" class="imagenHistoria__cierre" alt="Queen Argentina" id="queenArgentina">
                 <p class="textoHistoria__cierre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quia unde distinctio dignissimos molestiae placeat, reiciendis illum nam quas perspiciatis magnam at suscipit, dolores totam quod quae quidem obcaecati eligendi nobis ex modi deserunt eos corrupti! Quod deleniti veniam laudantium similique rerum minima laboriosam fugit nulla, error sit ab dolore?</p>
             </div>
     </section>
@@ -294,7 +298,7 @@
     <!-- Live Aid -->
     <section class="seccion__liveAid">
         <h3 class="titulo__liveAid" id="live__aid">Live Aid 1985</h3>
-        <iframe class="video__liveAid" src="https://www.youtube.com/embed/ngf1KF2_kPI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video__liveAid" src="https://www.youtube.com/embed/a87-SYfD0js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <!-- Live Aid Fin -->
     <footer id="contacto">
@@ -312,7 +316,8 @@
             <a href="https://github.com/Franco-Ezequiel-Marchegiani" target="_blank"><i class="fab fa-github-square"></i></a>
         </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/darkMode.js"></script>
     <script src="https://kit.fontawesome.com/83dce1527b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

@@ -1,5 +1,12 @@
 @import './variables.scss';
-
+body{
+    background: $colorBlanco;
+    .dark &{
+        background: $colorNegro;
+        color: $colorBlanco;
+        
+    }
+}
 .seccion__historia{
     ul{
         font-size: $subTitulo-computadora;
@@ -166,7 +173,7 @@
 @media only screen and (max-width:320px){
         .nav.justify-content-center{
             li{
-                font-size: $subTitulo-celular-pequeño;
+                font-size: $subTitulo-celular-chico;
                 font-weight: 700;
             }
         }
@@ -174,11 +181,11 @@
             h4{
             text-align:center;
             padding: 40px;
-            font-size: $subTitulo-celular-pequeño;
+            font-size: $subTitulo-celular-chico;
             }
             .titulo__historia{
             text-align:center;
-            font-size: $titulo-celular-pequeño;
+            font-size: $titulo-celular-chico;
             padding-bottom:50px;
             }
                 .imagenHistoria__queen{
@@ -190,7 +197,7 @@
                     grid-area: texto;
                     text-align:center;
                     padding: 20px;
-                    font-size:$fuente-celular-pequeño;
+                    font-size:$fuente-celular-chico;
                 }
                 .historia__freddieMercury{
                     display: grid;
@@ -210,7 +217,7 @@
                             align-self:center;
                             width:100%;
                             height:100%;
-                            font-size:$fuente-celular-pequeño;                           
+                            font-size:$fuente-celular-chico;                           
                     }
                 }
                 .historia__brianMay{
@@ -227,7 +234,7 @@
                         width:100%;
                         height:100%;
                         padding:20px;
-                        font-size:$fuente-celular-pequeño;
+                        font-size:$fuente-celular-chico;
                     }
                     .imagenHistoria__brian{
                         grid-area: imagen;
@@ -255,7 +262,7 @@
                         width:100%;
                         height: 100%;
                         padding:20px;
-                        font-size: $fuente-celular-pequeño;
+                        font-size: $fuente-celular-chico;
                     }
                 }
                 .historia__rogerTaylor{
@@ -272,7 +279,7 @@
                         width:100%;
                         height: 100%;
                         padding: 20px;
-                        font-size:$fuente-celular-pequeño;
+                        font-size:$fuente-celular-chico;
                     }
                     .imagenHistoria__roger{
                         grid-area: imagen;
@@ -303,7 +310,7 @@
                         width:100%;
                         height: 100%;
                         padding: 20px;
-                        font-size:$fuente-celular-pequeño;
+                        font-size:$fuente-celular-chico;
                     }
                 }
         }
@@ -653,7 +660,7 @@
 @media only screen and (min-width:769px) and (max-width:1199px){
         .nav.justify-content-center{
             li{
-                font-size: $subTitulo-celular-pequeño;
+                font-size: $subTitulo-celular-chico;
                 font-weight: 700;
             }
         }

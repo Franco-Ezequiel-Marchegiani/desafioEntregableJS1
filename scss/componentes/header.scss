@@ -1,5 +1,7 @@
 @import './variables.scss';
 .navbar{
+    background: $colorBlanco;
+    transition: .4s ease all;
     font-size: 18px;
     font-weight: 700;
     display: flex;
@@ -7,6 +9,21 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 15px 20px;
+    body.dark & {
+        background: $grisOscuro;
+        box-shadow: $sombraLight;
+        .fa-bars{
+            color: $colorBlanco;
+        }
+        a {
+            color: $colorBlanco;
+            &:hover{
+                color: $grisClaroHover;
+            }
+        }
+              
+    }
+    
     img{
         width: 100px;
         height: 100px;

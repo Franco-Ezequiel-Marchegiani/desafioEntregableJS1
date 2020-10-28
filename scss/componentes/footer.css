@@ -1,0 +1,286 @@
+footer {
+  background: #FF4E50;
+  background: -webkit-gradient(linear, left top, right top, from(#F9D423), to(#FF4E50));
+  background: linear-gradient(to right, #F9D423, #FF4E50);
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "descripcion queen misRedes";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 50% 25% 25%;
+      grid-template-columns: 50% 25% 25%;
+}
+
+footer p {
+  font-size: 22px;
+}
+
+body.dark footer p {
+  color: #000004;
+}
+
+footer .fab {
+  padding: 15px;
+  padding-top: 105px;
+  font-size: 70px;
+}
+
+footer .fa-instagram {
+  color: #fcfcfc;
+}
+
+footer .fa-instagram:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #e4405f;
+}
+
+footer .fa-facebook-square {
+  color: #fcfcfc;
+}
+
+footer .fa-facebook-square:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #3b5999;
+}
+
+footer .fa-linkedin {
+  color: #fcfcfc;
+}
+
+footer .fa-linkedin:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #0077B5;
+}
+
+footer .fa-github-square {
+  color: #fcfcfc;
+}
+
+footer .fa-github-square:hover {
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #333333;
+}
+
+.descripcion__footer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: descripcion;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.descripcion__footer .imagenLogo__footer {
+  width: 150px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 20px;
+}
+
+.redes__queen {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: queen;
+  text-align: center;
+}
+
+.mis__redes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: misRedes;
+  text-align: center;
+}
+
+@media only screen and (max-width: 320px) {
+  footer {
+        grid-template-areas: "descripcion" "queen" "misRedes";
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer .fab {
+    font-size: 50px;
+  }
+  .descripcion__footer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: descripcion;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .descripcion__footer .imagenLogo__footer {
+    width: 80px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 20px;
+  }
+  .redes__queen {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: queen;
+    text-align: center;
+  }
+  .mis__redes {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: misRedes;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 599px) {
+  footer {
+        grid-template-areas: "descripcion" "queen" "misRedes";
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  footer .fab {
+    font-size: 60px;
+  }
+  .descripcion__footer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: descripcion;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .descripcion__footer .imagenLogo__footer {
+    width: 120px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 20px;
+  }
+  .redes__queen {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: queen;
+    text-align: center;
+  }
+  .mis__redes {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: misRedes;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  footer {
+        grid-template-areas: "descripcion" "queen" "misRedes";
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer p {
+    font-size: 20px;
+  }
+  .descripcion__footer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: descripcion;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .descripcion__footer .imagenLogo__footer {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 20px;
+  }
+  .redes__queen {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: queen;
+    text-align: center;
+  }
+  .mis__redes {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: misRedes;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  footer {
+        grid-template-areas: "descripcion queen misRedes";
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 40% 30% 30%;
+        grid-template-columns: 40% 30% 30%;
+  }
+  footer p {
+    font-size: 22px;
+  }
+  footer .fab {
+    padding: 15px;
+    padding-top: 170px;
+    padding-right: 10px;
+    font-size: 70px;
+  }
+  .descripcion__footer {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: descripcion;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .descripcion__footer .imagenLogo__footer {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 20px;
+  }
+  .redes__queen {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: queen;
+    text-align: center;
+  }
+  .mis__redes {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: misRedes;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
