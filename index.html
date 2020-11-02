@@ -318,6 +318,32 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/darkMode.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCamW-dR8weVK15n9HCdbnjXnw15xQwE14",
+        authDomain: "discografia-queen.firebaseapp.com",
+        databaseURL: "https://discografia-queen.firebaseio.com",
+        projectId: "discografia-queen",
+        storageBucket: "discografia-queen.appspot.com",
+        messagingSenderId: "407463274731",
+        appId: "1:407463274731:web:4ea4085dbcee0c2f48f6ae",
+        measurementId: "G-743E8LV8VJ"
+    };
+    // Initialize Firebase
+    var proy = firebase.initializeApp(firebaseConfig);
+    console.log(proy.name);
+    firebase.analytics();
+    
+    </script>
     <script src="https://kit.fontawesome.com/83dce1527b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

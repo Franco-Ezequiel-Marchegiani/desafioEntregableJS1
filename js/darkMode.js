@@ -77,7 +77,7 @@ function funcionDarkMode(){
         fotoJohn = "johnColor";
     }
     //Condicional foto Roger
-    if(fotoRoger = "rogerColor"){
+    if(fotoRoger == "rogerColor"){
         imagenRoger.src = "https://i.pinimg.com/originals/43/70/13/437013594f414923c6887a069d37fb5f.png";
         fotoRoger = "rogerDark";
     }else{
@@ -85,7 +85,7 @@ function funcionDarkMode(){
         fotoRoger = "rogerColor";
     }
     //Condicional ImagenFinal
-    if(fotoQueenArg = "queenArgColor"){
+    if(fotoQueenArg == "queenArgColor"){
         imagenQueenArg.src = "./imagenes/queenArgentinaDark.png";
         fotoQueenArg = "queenArgDark";
     } else{
