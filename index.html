@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top"><!-- sticky-top hace el header desplegable -->
         <a class="navbar-brand" href="#">
             <img src="./Imagenes/logo.png" alt="Icono Queen" id="logoQueen">
         </a>
@@ -18,22 +18,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="enlace__home" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#discografia">Discografía</a>
+                        <a class="nav-link" id="enlace__discografia" href="#discografia">Discografía</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pelicula">Pelicula</a>
+                        <a class="nav-link" id="enlace__pelicula" href="#">Pelicula</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#historia">Historia</a>
+                        <a class="nav-link" id="enlace__historia" href="#">Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#live__aid">Live Aid 1985</a>
+                        <a class="nav-link" id="enlace__liveAid" href="#">Live Aid 1985</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" id="enlace__contacto" href="#">Contacto</a>
                     </li>
                 </ul>
                 <button onclick="funcionDarkMode();" class="switch" id="switch">
@@ -338,19 +338,19 @@
         <h3 class="titulo__historia">Historia</h3>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#queen">Queen</a>
+              <a class="nav-link active" id="enlace__queen" href="#">Queen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#freddieMercury">Freddie Mercury</a>
+              <a class="nav-link" id="enlace__freddieMercury" href="#">Freddie Mercury</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#brianMay">Brian May</a>
+              <a class="nav-link" id="enlace__brianMay" href="#">Brian May</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#johnDeacon">John Deacon</a>
+                <a class="nav-link" id="enlace__johnDeacon" href="#">John Deacon</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#rogerTaylor">Roger Taylor</a>
+                <a class="nav-link" id="enlace__rogerTaylor" href="#">Roger Taylor</a>
             </li>
             </ul>
             <div class="historia__queen" >
@@ -386,14 +386,14 @@
     </section>
     <!-- Historia Fin -->
     <!-- Live Aid -->
-    <section class="seccion__liveAid">
+    <section class="seccion__liveAid" id="liveAid">
         <h3 class="titulo__liveAid" id="live__aid">Live Aid 1985</h3>
         <iframe class="video__liveAid" src="https://www.youtube.com/embed/a87-SYfD0js" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <!-- Live Aid Fin -->
     <footer id="contacto">
         <div class="descripcion__footer">
-         <a href="#"><img src="./Imagenes/logo.png" class="imagenLogo__footer" alt="Icono Footer"></a>
+         <a href="#" id="enlace__home"><img src="./Imagenes/logo.png" class="imagenLogo__footer" alt="Icono Footer"></a>
             <p class="texto__footer">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam odit dignissimos voluptatum. Asperiores ipsa veritatis ducimus veniam corrupti, non expedita?</p>
         </div>
@@ -406,8 +406,10 @@
             <a href="https://github.com/Franco-Ezequiel-Marchegiani" target="_blank"><i class="fab fa-github-square"></i></a>
         </div>
     </footer>
+    <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
     <script src="js/darkMode.js"></script>
+    <script src="js/scroll.js"></script>
     <script src="js/carritoCompras.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
