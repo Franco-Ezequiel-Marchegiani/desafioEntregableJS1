@@ -1,19 +1,4 @@
-/*document.getElementById('myVideo').mute()
-
-var video = iframe.getElementById('myVideo')
- video.mute();
-
- var videos = iframe.getElementById('myVideo')
- videos.mute(); 
-  window.onload = function() {
-    document.getElementById('myVideo').mute()
-
-    var video = iframe.getElementById('myVideo')
-    video.mute();
-
-    var videos = iframe.getElementById('myVideo')
-    videos.mute();
-    }; *//* 
+/* 
 class DiscografiaQueen{
     titulo;
     publicacion;

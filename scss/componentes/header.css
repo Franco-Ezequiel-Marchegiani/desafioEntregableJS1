@@ -24,17 +24,16 @@ body.dark .navbar {
           box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
 }
 
+body.dark .navbar .fa-bars {
+  color: #fcfcfc;
+}
+
 body.dark .navbar a {
   color: #fcfcfc;
 }
 
 body.dark .navbar a:hover {
   color: #ACABAB;
-}
-
-body.dark .navbar .navbar-toggler {
-  color: #fcfcfc;
-  background: #222222;
 }
 
 .navbar img {
