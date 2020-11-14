@@ -122,6 +122,3 @@ function compraButtonClicked(){//Es decir, el usuario al clickear sucederá esto
 Y al hacer que esté en otras funciones, toma en cuenta los eventos y modificaciones de dicha función a la cual se llamó
 
 */
-window.addEventListener('scroll', function(){
-    console.log(window.pageYOffset);
-});

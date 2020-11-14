@@ -1,6 +1,6 @@
 $(function () {
 
-    let equipo = $('#discografia').offset().top,
+    let discografia = $('#discografia').offset().top,
     pelicula = $('#pelicula').offset().top,
     historia = $('#historia').offset().top,
     liveAid = $('#liveAid').offset().top,
@@ -8,7 +8,7 @@ $(function () {
 
         //Esto lo hace responsive
     window.addEventListener('resize', function(){
-        let equipo = $('#discografia').offset().top,
+        let discografia = $('#discografia').offset().top,
             pelicula = $('#pelicula').offset().top,
             liveAid = $('#liveAid').offset().top,
             contacto = $('#contacto').offset().top;
@@ -16,14 +16,14 @@ $(function () {
 
     $('#enlace__home').on('click', function(e){
         e.preventDefault();
-        $('html, body')({
+        $('html, body').animate({
             scrollTop: 0
         },600);
     });
 
     $('#enlace__discografia').on('click', function(e){
         e.preventDefault();
-        $('html, body')({
+        $('html, body').animate({
             scrollTop: discografia -100
         },600);
     });
@@ -55,4 +55,7 @@ $(function () {
             scrollTop: contacto -100
         },600);
     });
+});
+window.addEventListener('scroll', function(){
+    console.log(window.pageYOffset);
 });
