@@ -123,7 +123,6 @@ $(".showCarrito").click(function(){
     $("#carritoDeCompras").show();
 });
 
-
 //NOTAS:
 /*La función updateShoppingCartTotal() hace que se modifique el valor, ya que no es un valor en sí, sino que se actualiza constantemente.
 Y al hacer que esté en otras funciones, toma en cuenta los eventos y modificaciones de dicha función a la cual se llamó
