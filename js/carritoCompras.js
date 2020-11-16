@@ -70,7 +70,6 @@ function addItemToShoppingCart(itemTitle,itemPrice,itemImage){
     //Modifica el valor total al eliminar una compra del carrito
     shoppingCartRow.querySelector('.shoppingCartItemQuantity')
     .addEventListener('change', quantityChanged)
-
     updateShoppingCartTotal()
 }
 //Añade el precio final de los productos
@@ -116,6 +115,14 @@ function compraButtonClicked(){//Es decir, el usuario al clickear sucederá esto
     shoppingCartItemsContainer.innerHTML = ''; //Vacío
     updateShoppingCartTotal();//También vacía el precio total
 }
+
+// Aparecer el carrito de compra
+$("#carritoDeCompras").hide()
+
+$(".showCarrito").click(function(){
+    $("#carritoDeCompras").show();
+});
+
 
 //NOTAS:
 /*La función updateShoppingCartTotal() hace que se modifique el valor, ya que no es un valor en sí, sino que se actualiza constantemente.
